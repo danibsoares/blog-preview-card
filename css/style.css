@@ -1,0 +1,17 @@
+/* GENERAL */
+
+* {
+  --background: #F4D04E;
+  --dark: #111111;
+  --medium: #6B6B6B;
+  --light: #FFFFFF;
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Figtree", sans-serif;
+  background-color: var(--background);
+}
