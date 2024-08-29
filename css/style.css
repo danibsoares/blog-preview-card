@@ -13,5 +13,100 @@
 
 body {
   font-family: "Figtree", sans-serif;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: 0;
+  color: var(--dark);
   background-color: var(--background);
+}
+
+/* CARD */
+
+main .card-content {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  max-width: 24rem;
+  margin-left: 50%;
+  margin-right: 50%;
+  transform: translate(-50%);
+}
+
+main .card-content .card-container {
+  background-color: var(--light);
+  border-radius: 1.25rem; 
+  border: solid 0.125rem;
+  border-color: var(--dark);
+  box-shadow: 0.625rem 0.625rem var(--dark);
+  padding: 1.5rem;
+}
+
+main .card-content .card-container figure img {
+  border-radius: 0.625rem;
+  margin-bottom: 1.5rem;
+}
+
+main .card-content .card-container .card-text-container .card-tag {
+  display: inline-block;
+  background-color: var(--background);
+  padding: 0.25rem 0.75rem;
+  margin-bottom: 0.75rem;
+  border-radius: 0.25rem;
+  font-size: 0.875rem;
+  font-weight: 800;
+}
+
+main .card-content .card-container .card-text-container .card-subtitle {
+  font-size: 0.875rem;
+  margin-bottom: 0.75rem;
+
+}
+
+main .card-content .card-container .card-text-container .card-title {
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin-bottom: 0.75rem;
+}
+
+main .card-content .card-container .card-text-container .card-title:hover {
+  color: var(--background);
+  transition: 0.5ms;
+  cursor: pointer;
+}
+
+main .card-content .card-container .card-text {
+  color: var(--medium);
+  font-size: 1rem;
+  text-align: left;
+  margin-bottom: 0.75rem;
+}
+
+main .card-content .card-container .card-author-attribution {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+main .card-content .card-container .card-author-attribution figure img {
+  width: 2.5rem;
+  margin: auto;
+}
+
+main .card-content .card-container .card-author-attribution .card-author {
+  font-size: 0.875rem;
+  font-weight: 800;
+} 
+
+/* FOOTER */
+
+footer {
+  color: var(--medium);
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
 }
